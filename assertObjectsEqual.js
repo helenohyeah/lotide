@@ -46,19 +46,8 @@ const eqObjects = function(object1, object2) {
 
 
 // TEST CODE
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
 assertObjectsEqual({ a: "1", b: "2" }, { a: "1", b: "2" }); // pass
-
-const abc = { a: "1", b: "2", c: "3" };
 assertObjectsEqual({ a: "1", b: "2" }, { a: "1", b: "2", c: "3" }); // fail
-
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
 assertObjectsEqual({ c: "1", d: ["2", 3] }, { d: ["2", 3], c: "1" }); // pass
-
-const cd2 = { c: "1", d: ["2", 3, 4] };
 assertObjectsEqual({ c: "1", d: ["2", 3] }, { c: "1", d: ["2", 3, 4] }); // fail
-
-const cd3 = { c: ["2", 3], d: "1"};
 assertObjectsEqual({ c: "1", d: ["2", 3] }, { c: ["2", 3], d: "1"}); // fail
