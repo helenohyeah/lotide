@@ -13,13 +13,13 @@ const eqArrays = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
       // check if any value does't match => return false
-      return false; 
+      return false;
     } else {
       continue;
     }
   }
   // if the loop completes then the arrays must match
-  return true; 
+  return true;
 };
 
 const flatten = function(arr) {
@@ -45,7 +45,6 @@ const flatten = function(arr) {
 */
 
 // TEST CODE
-console.log(flatten([1, 2, [3, 4], 5, [6]]));
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // pass
 assertArraysEqual(flatten([7, 8, 9]), [7, 8, 9]); // pass
 assertArraysEqual(flatten([11, 22, [33, 44]]), [1, 2, 3, 4]); // fail

@@ -13,13 +13,13 @@ const eqArrays = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
       // check if any value does't match => return false
-      return false; 
+      return false;
     } else {
       continue;
     }
   }
   // if the loop completes then the arrays must match
-  return true; 
+  return true;
 };
 
 const middle = function(arr) {
@@ -28,9 +28,9 @@ const middle = function(arr) {
   if (len <= 2) {  // if length is less than 2, return an empty array
     return [];
   } else if (len % 2 !== 0) {  // if odd, return the value at index = length/2 (rounded up)
-    return [arr[Math.floor(len/2)]];
-  } else if (len %2 === 0) {  // if even, return the values at index = length/2 - 1, length/2
-    return [arr[len/2 - 1], arr[len/2]];
+    return [arr[Math.floor(len / 2)]];
+  } else if (len % 2 === 0) {  // if even, return the values at index = length/2 - 1, length/2
+    return [arr[len / 2 - 1], arr[len / 2]];
   }
 };
 

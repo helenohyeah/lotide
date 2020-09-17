@@ -24,7 +24,7 @@ const ratings = {
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}
+};
 assertEqual(findKey(ratings, x => x.stars === 2), "noma");
 assertEqual(findKey(ratings, x => x.stars === 4), undefined);
 assertEqual(findKey(ratings, x => x.stars > 2), "Akaleri");

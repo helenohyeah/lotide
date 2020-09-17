@@ -13,13 +13,13 @@ const eqArrays = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
       // check if any value does't match => return false
-      return false; 
+      return false;
     } else {
       continue;
     }
   }
   // if the loop completes then the arrays must match
-  return true; 
+  return true;
 };
 
 // return a "slice of the array with elements taken from the beginning." It should keep going until the callback/predicate returns a truthy value
