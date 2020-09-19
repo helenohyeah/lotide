@@ -1,26 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`💚 Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const eqArrays = function(array1, array2) {
-  // check if array lengths are equal => return false
-  if (array1.length !== array2.length) return false;
-  // compare the values at each index
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      // check if any value does't match => return false
-      return false;
-    } else {
-      continue;
-    }
-  }
-  // if the loop completes then the arrays must match
-  return true;
-};
+// const assertEqual = require('./assertEqual.js');
+const eqArrays = require('./eqArrays.js');
 
 // Returns true if both objects have identical keys with identical values. Else returns false
 const eqObjects = function(object1, object2) {
@@ -43,21 +22,22 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+module.exports = eqObjects;
 
 // TEST CODE
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-assertEqual(eqObjects(ab, ba), true);
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// assertEqual(eqObjects(ab, ba), true);
 
-const abc = { a: "1", b: "2", c: "3" };
-assertEqual(eqObjects(ab, abc), false);
+// const abc = { a: "1", b: "2", c: "3" };
+// assertEqual(eqObjects(ab, abc), false);
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-assertEqual(eqObjects(cd, dc), true);
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// assertEqual(eqObjects(cd, dc), true);
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertEqual(eqObjects(cd, cd2), false);
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// assertEqual(eqObjects(cd, cd2), false);
 
-const cd3 = { c: ["2", 3], d: "1"};
-assertEqual(eqObjects(cd, cd3), false);
+// const cd3 = { c: ["2", 3], d: "1"};
+// assertEqual(eqObjects(cd, cd3), false);
