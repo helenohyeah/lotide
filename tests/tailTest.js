@@ -6,15 +6,15 @@ describe("#tail", () => {
     assert.deepEqual(tail(["Hello", "Hi", "How are you"]), ["Hi", "How are you"]);
   });
   
-  it('returns [2, "one", "two"] for [1, 2, "one", "two"]', () => {
+  it('returns [2, "one", "two"] given [1, 2, "one", "two"]', () => {
     assert.deepEqual(tail([1, 2, "one", "two"]), [2, "one", "two"]);
   });
 
-  it('returns [] for [5]', () => {
+  it('returns [] given [5]', () => {
     assert.deepEqual(tail([5]), []);
   });
 
-  it('returns [] for []', () => {
+  it('returns [] given []', () => {
     assert.deepEqual(tail([]), []);
   });
 });
