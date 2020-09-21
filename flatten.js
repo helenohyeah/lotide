@@ -14,6 +14,8 @@ const flatten = function(arr) {
   return newArr;
 };
 
+module.exports = flatten;
+
 /* PSUEDO CODE
   loop through the array
   check if each item is an array
@@ -22,12 +24,12 @@ const flatten = function(arr) {
   return the new array
 */
 
-// TEST CODE
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // pass
-assertArraysEqual(flatten([7, 8, 9]), [7, 8, 9]); // pass
-assertArraysEqual(flatten([11, 22, [33, 44]]), [1, 2, 3, 4]); // fail
-assertArraysEqual(flatten(['1', 2, ['3', 4], 5, [6]]), ['1', 2, '3', 4, 5, 6]); // pass
-assertArraysEqual(flatten(['1', 2, ['3', 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // fail
-assertArraysEqual(flatten([['dog', 'cat'], ['whale', 'dolphin', 'tuna'], 'horse']), ['dog', 'cat', 'whale', 'dolphin', 'tuna', 'horse']); // pass
-assertArraysEqual(flatten([['hi', 'bye'], []]), ['hi', 'bye']); // pass
-assertArraysEqual(flatten([['dog', 'cat'], 'horse']), ['dog', 'cat']); // fail
+// // TEST CODE
+// assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // pass
+// assertArraysEqual(flatten([7, 8, 9]), [7, 8, 9]); // pass
+// assertArraysEqual(flatten([11, 22, [33, 44]]), [1, 2, 3, 4]); // fail
+// assertArraysEqual(flatten(['1', 2, ['3', 4], 5, [6]]), ['1', 2, '3', 4, 5, 6]); // pass
+// assertArraysEqual(flatten(['1', 2, ['3', 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // fail
+// assertArraysEqual(flatten([['dog', 'cat'], ['whale', 'dolphin', 'tuna'], 'horse']), ['dog', 'cat', 'whale', 'dolphin', 'tuna', 'horse']); // pass
+// assertArraysEqual(flatten([['hi', 'bye'], []]), ['hi', 'bye']); // pass
+// assertArraysEqual(flatten([['dog', 'cat'], 'horse']), ['dog', 'cat']); // fail
