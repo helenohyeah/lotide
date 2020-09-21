@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@helenohyeah/lotide",
   "version": "1.0.0",
   "description": "A smaller and simpler version of the [Lodash](https://lodash.com/) library.",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/helenohyeah/lotide.git"
   },
-  "author": "",
+  "author": "Helen Ouyang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/helenohyeah/lotide/issues"
