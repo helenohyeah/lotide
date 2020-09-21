@@ -1,5 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual.js');
-
 const middle = function(arr) {
   // check the length of the array
   let len = arr.length;
@@ -12,11 +10,4 @@ const middle = function(arr) {
   }
 };
 
-// TEST CODE
-
-assertArraysEqual(middle([1]), []); // pass
-assertArraysEqual(middle([1, 2]), []); // pass
-assertArraysEqual(middle([1, 2, 3]), [2]); // pass
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // pass
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // pass
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [2]); // fail
+module.exports = middle;
