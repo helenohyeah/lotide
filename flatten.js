@@ -7,7 +7,7 @@ const flatten = function(arr) {
       for (let e of item) {
         newArr.push(e);
       }
-    } else {
+    } else if (item.length !== 0) {
       newArr.push(item);
     }
   }
