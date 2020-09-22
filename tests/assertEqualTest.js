@@ -1,5 +1,6 @@
 const assertEqual = require('../assertEqual');
 
-assertEqual(1, 1); // pass
-assertEqual("Helen", "Helen"); // pass
-assertEqual(25, 25); // pass
+assertEqual(10, 10); // pass
+assertEqual("Hello", "Hello"); // pass
+assertEqual(20, ""); // fail
+assertEqual("Hello", 10); // fail
