@@ -27,7 +27,7 @@ The following functions are currently implemented
 | Function | Description |
 | --- | --- |
 | countLetters | Given a sentence, returns a count of how many time each letter appears in a sentence |
-| countOnly | Given an array of items and a subset of items, returns a count of the subset items |
+| countOnly | Given an array of items and a subset of items to care about (key: true), returns a count of the subset items |
 | findKey | Given an object and a callback function, returns the first key for which the callback returns truthy. Returns undefined if no value is found |
 | findKeyByValue | Given an object and a value, returns the first key that contains the given value. Returns undefined if no given value is found |
 | flatten | Given an array that may contain array subsets, return a 1D array with all the items |
